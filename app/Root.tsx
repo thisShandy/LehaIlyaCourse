@@ -15,7 +15,6 @@ import * as screens from "./configs/screens";
 const Root: React.FC<PropsWithChildren<{}>> = () => {
   // const [ (переменная), (функция, которая её обновляет) ] = useState<тип>(знаение по умолчанию);
   const [ activeScreen, setActiveScreen ] = useState<string>(screens.HOME_SCREEN);
-
   const handleScreen = (screen: string) => {
     setActiveScreen(screen);
   };
