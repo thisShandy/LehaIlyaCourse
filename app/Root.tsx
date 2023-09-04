@@ -9,6 +9,7 @@ import MenuComponent from "./components/MenuComponent/MenuComponent";
 // screens
 import HomeScreen from "./screens/HomeScreen/HomeScreen";
 import MoodScreen from "./screens/MoodScreen/MoodScreen";
+import SettingsScreen from "./screens/SettingsScreen/SettingsScreen";
 
 import * as screens from "./configs/screens";
 
@@ -32,6 +33,11 @@ const Root: React.FC<PropsWithChildren<{}>> = () => {
       {
         activeScreen === screens.MOOD_SCREEN && (
           <MoodScreen />
+        )
+      }
+      {
+        activeScreen === screens.SETTINGS_SCREEN && (
+          <SettingsScreen />
         )
       }
       <MenuComponent
